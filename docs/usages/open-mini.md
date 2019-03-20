@@ -2,7 +2,7 @@
 layout: default
 title: 打开微信小程序
 parent: 使用方法
-nav_order: 2
+nav_order: 6
 ---
 
 # 打开微信小程序
@@ -27,7 +27,7 @@ nav_order: 2
 
 ## 示例代码
 
-```Javascript
+```javascript
 var params = {
     userName: 'gh_d43f693ca31f',
     path: 'pages/index/index?name1=key1&name2=key2',

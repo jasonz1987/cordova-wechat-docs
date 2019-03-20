@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: cordova-plugin-wechat
+title: cordova-wechat
 email: ccnuzxg@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a document for cordova-plugin-wechat
-baseurl: "cordova-plugin-wechat" # the subpath of your site, e.g. /blog
+baseurl: "cordova-wechat" # the subpath of your site, e.g. /blog
 url: "https://jasonz1987.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jasonz1987
 

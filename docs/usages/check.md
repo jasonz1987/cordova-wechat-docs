@@ -9,6 +9,11 @@ nav_order: 2
 
 `isInstalled`方法用来检测微信客户端是否安装。
 
+## 参数说明
+
+无
+
+## 示例代码
 ```javascript
 Wechat.isInstalled(function (installed) {
     alert("Wechat installed: " + (installed ? "Yes" : "No"));

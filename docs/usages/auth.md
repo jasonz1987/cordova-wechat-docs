@@ -8,7 +8,18 @@ nav_order: 4
 
 #  登录授权
 
-`auth`方法用来检测微信客户端是否安装。
+`auth`方法用来唤起微信客户端进行授权登录。
+
+[微信官方文档](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419317851&token=&lang=zh_CN)
+
+## 参数说明
+
+| 参数名 | 参数类型 | 是否必须 | 说明           |
+| ------ | -------- | -------- | -------------- |
+| scope  | string   | 是       | 授权域         |
+| state  | string   | 是       | 标识符唯一即可 |
+
+## 示例代码
 
 ```javascript
 var scope = "snsapi_userinfo",
@@ -21,4 +32,3 @@ Wechat.auth(function (installed) {
 });
 ```
 
-* 注：微信登录授权只是为了获取用户的code信息，如果要获取用户的access_token和用户资料，请参照微信登录认证的流程。

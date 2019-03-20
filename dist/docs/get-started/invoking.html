@@ -5,10 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   
-  <meta name="Description" content="Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages.">
-  
 
-  <title>首页 - cordova-wechat</title>
+  <title>调用 - cordova-wechat</title>
   <link rel="stylesheet" href="https://jasonz1987.github.io/cordova-wechat/assets/css/just-the-docs.css">
 
   
@@ -48,9 +46,9 @@
     
       
         
-          <li class="navigation-list-item active">
+          <li class="navigation-list-item">
             
-            <a href="https://jasonz1987.github.io/cordova-wechat/" class="navigation-list-link active">首页</a>
+            <a href="https://jasonz1987.github.io/cordova-wechat/" class="navigation-list-link">首页</a>
             
           </li>
         
@@ -66,7 +64,7 @@
     
       
         
-          <li class="navigation-list-item">
+          <li class="navigation-list-item active">
             
             <a href="https://jasonz1987.github.io/cordova-wechat/docs/get-started" class="navigation-list-link">开始使用</a>
             
@@ -86,9 +84,9 @@
                   
                 
                   
-                    <li class="navigation-list-item ">
+                    <li class="navigation-list-item  active">
                       
-                      <a href="https://jasonz1987.github.io/cordova-wechat/docs/get-started/invoking.html" class="navigation-list-link">调用</a>
+                      <a href="https://jasonz1987.github.io/cordova-wechat/docs/get-started/invoking.html" class="navigation-list-link active">调用</a>
                       
                     </li>
                   
@@ -277,29 +275,38 @@
       </div>
       <div class="main-content">
         
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="https://jasonz1987.github.io/cordova-wechat/docs/get-started">开始使用</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>调用</span></li>
+              </ol>
+            </nav>
+          
+        
         <div id="main-content" class="page-content" role="main">
-          <h1 id="关于插件">关于插件</h1>
+          <h1 id="调用">调用</h1>
 
-<p><code class="highlighter-rouge">cordova-plugin-wechat</code>是基于微信官方sdk的cordova插件。</p>
+<p>如果你使用的<code class="highlighter-rouge">ionic</code>框架，也可以通过native方式使用。</p>
 
-<p>他基本包含了微信sdk的所有功能：<strong>微信登录</strong>，<strong>微信分享</strong>，<strong>微信支付</strong>和<strong>微信小程序</strong>功能。</p>
+<p>详情参考<a href="https://ionicframework.com/docs/v3/">wechat-native</a></p>
 
-<h1 id="联系我们">联系我们</h1>
+<p>定义</p>
 
-<p>QQ交流群:190808518</p>
+<div class="language-typescript highlighter-rouge"><pre class="highlight"><code><span class="kr">declare</span> <span class="kd">let</span> <span class="nx">Wechat</span><span class="p">:</span><span class="kr">any</span><span class="p">;</span>
+</code></pre></div>
 
-<p><a href="http://shang.qq.com/wpa/qunwpa?idkey=8279476de172cacb72a51a5630744316c0069620ad8b33be3abee243af2cc001"><img src="https://pub.idqqimg.com/wpa/images/group.png" alt="cordova-wechat官方交流群" /></a></p>
+<p>调用</p>
 
-<h1 id="加入我们">加入我们</h1>
+<div class="language-typescript highlighter-rouge"><pre class="highlight"><code><span class="nx">Wechat</span><span class="p">.</span><span class="nx">somefunction</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span><span class="kd">function</span><span class="p">(</span><span class="nx">success</span><span class="p">){</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"调用成功"</span><span class="p">);</span>
+<span class="p">},</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">){</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"调用失败"</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
 
-<p>如果你有cordova插件开发经验并热爱开源，可以通过下面方式加入我们。</p>
-
-<p><em>（请注明微信插件）</em></p>
-
-<ul>
-  <li>qq:281674669</li>
-  <li>微信:foxmee</li>
-</ul>
 
 
           
