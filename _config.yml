@@ -26,6 +26,7 @@ markdown: kramdown
 theme: just-the-docs
 search_enabled: true
 color_scheme: nil
+ga_tracking: UA-136581169-1
 plugins:
   - jekyll-feed
 
