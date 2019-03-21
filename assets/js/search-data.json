@@ -44,7 +44,7 @@
   "6": {
     "id": "6",
     "title": "首页",
-    "content": "关于插件 cordova-plugin-wechat是基于微信官方sdk的cordova插件。 他基本包含了微信sdk的所有功能：微信登录，微信分享，微信支付和微信小程序功能。 联系我们 QQ交流群:190808518 加入我们 如果你有cordova插件开发经验并热爱开源，可以通过下面方式加入我们。 （请注明微信插件） qq:281674669 微信:foxmee",
+    "content": "关于插件 cordova-plugin-wechat是基于微信官方sdk的cordova插件。 他基本包含了微信sdk的所有功能：微信登录，微信分享，微信支付和微信小程序功能。 立即开始 GitHub主页 联系我们 QQ交流群:190808518 加入我们 如果你有cordova插件开发经验并热爱开源，可以通过下面方式加入我们。 （请注明微信插件） qq:281674669 微信:foxmee",
     "url": "https://jasonz1987.github.io/cordova-wechat/",
     "relUrl": "/"
   },
@@ -93,7 +93,7 @@
   "13": {
     "id": "13",
     "title": "教程",
-    "content": "教程 一般来说，按照文档上操作可以解决大部分问题。当然呢，如果你仍然无从下手，也可以参考我录制的课程。 《ionic3微信开发》 《微信公众平台的基本使用》",
+    "content": "教程 一般来说，按照文档上操作可以解决大部分问题。当然呢，如果你仍然无从下手，也可以参考我录制的课程。 《ionic3接入微信开发》 《微信开放平台的基本使用》",
     "url": "https://jasonz1987.github.io/cordova-wechat/docs/totorial",
     "relUrl": "/docs/totorial"
   },
