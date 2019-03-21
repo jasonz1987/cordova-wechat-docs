@@ -3,105 +3,112 @@
     "id": "0",
     "title": "",
     "content": "404 Page not found :( The requested page could not be found.",
-    "url": "https://jasonz1987.github.io/cordova-wechat/404.html",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/404.html",
     "relUrl": "/404.html"
   },
   "1": {
     "id": "1",
     "title": "登录",
     "content": "登录授权 auth方法用来唤起微信客户端进行授权登录。 微信官方文档 参数说明 参数名 参数类型 是否必须 说明 scope string 是 授权域 state string 是 标识符唯一即可 示例代码 var scope = &quot;snsapi_userinfo&quot;, state = &quot;_&quot; + (+new Date()); Wechat.auth(function (installed) { alert(&quot;Wechat installed: &quot; + (installed ? &quot;Yes&quot; : &quot;No&quot;)); }, function (reason) { alert(&quot;Failed: &quot; + reason); });",
-    "url": "https://jasonz1987.github.io/cordova-wechat/docs/usages/auth.html",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/docs/usages/auth.html",
     "relUrl": "/docs/usages/auth.html"
   },
   "2": {
     "id": "2",
     "title": "检查是否安装",
     "content": "检查安装 isInstalled方法用来检测微信客户端是否安装。 参数说明 无 示例代码 Wechat.isInstalled(function (installed) { alert(&quot;Wechat installed: &quot; + (installed ? &quot;Yes&quot; : &quot;No&quot;)); }, function (reason) { alert(&quot;Failed: &quot; + reason); });",
-    "url": "https://jasonz1987.github.io/cordova-wechat/docs/usages/check.html",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/docs/usages/check.html",
     "relUrl": "/docs/usages/check.html"
   },
   "3": {
     "id": "3",
-    "title": "捐赠",
-    "content": "捐赠 开源软件的推动和发展离不开各位的支持，如果你觉得我们的插件帮助到了你，也不妨打赏感谢一下。 （请注明：微信插件）",
-    "url": "https://jasonz1987.github.io/cordova-wechat/docs/donate",
-    "relUrl": "/docs/donate"
+    "title": "DEMO",
+    "content": "DEMO 下面列举了一些常用框架的示例工程供大家参考使用 *ionic3 *ionic1",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/docs/demo",
+    "relUrl": "/docs/demo"
   },
   "4": {
     "id": "4",
-    "title": "FAQ",
-    "content": "FAQ 为什么插件的登录方法不能获取到用户的昵称和头像？ 微信的移动端登录是基于oauth2.0标准，是需要客户端和服务端来共同实现的，在整个流程里客户端的auth方法只是用来返回用户的code,然后把获取到的code通过调用微信的接口获取到access_token，再通过获取用户资料的接口获取到用户的资料。因为请求接口的时候需要传入应用的app secret,为了应用的安全，因此后面2步我们强烈不建议在客户端实现。 此插件和SocialSharing-PhoneGap-Plugin有什么不同？ SocialSharing-PhoneGap-Plugin调用的是系统级的分享接口，他支持的平台更多，但是功能有限。而我们的插件使用的是微信官方的sdk，所以在功能上和微信原生的sdk功能是一致的，功能会更加全面。 运行的时候提示”微信签名不一致” 确认微信的apk签名与开放平台填写的一致，可以通过签名生成工具获取签名。 另外ionic默认debug模式下运行的apk与正式打包出来签名的apk签名是不一致的。 微信支付的时候提示”普通错误” 1）确保apk的签名与微信开放平台填写一致 2）检查服务端生成签名的时候的参数是否与文档一致，尤其是大小写和顺序问题。 3）通过微信接口调试工具 验证签名是否正确 分享、支付的时候跳转回app的时候闪退 如果你的cordova-android版本是7.0以上,出现上述情况的时候，可以通过以下方法解决。 升级cordova-plugin-wechat到2.6.0版本以上； 删除插件和平台，重新添加和编译； 检查项目目录下 platforms/android/app/src/com/jasonz/demo ,其中com/jasonz/demo为你的报名路径下 是否存在wxapi文件夹,并且是否该文件夹下是否存在EntryActivity.java , WXEntryActivity.java , WXPayEntryActivity.java这三个文件。如果没有这个目录和3个文件，新建一个wxapi目录，把plugins/cordova-plugin-wechat/src/android 下的这3个文件拷贝到wrapi目录下，并且修改文件内容的第一行package __PACKAGE_NAME__ 为你的报名，例如：package com.jasonz.demo 即可。",
-    "url": "https://jasonz1987.github.io/cordova-wechat/docs/faq",
-    "relUrl": "/docs/faq"
+    "title": "捐赠",
+    "content": "捐赠 开源软件的推动和发展离不开各位的支持，如果你觉得我们的插件帮助到了你，也不妨打赏感谢一下。 （请注明：微信插件）",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/docs/donate",
+    "relUrl": "/docs/donate"
   },
   "5": {
     "id": "5",
-    "title": "开始使用",
-    "content": "开始使用",
-    "url": "https://jasonz1987.github.io/cordova-wechat/docs/get-started",
-    "relUrl": "/docs/get-started"
+    "title": "FAQ",
+    "content": "FAQ 为什么插件的登录方法不能获取到用户的昵称和头像？ 微信的移动端登录是基于oauth2.0标准，是需要客户端和服务端来共同实现的，在整个流程里客户端的auth方法只是用来返回用户的code,然后把获取到的code通过调用微信的接口获取到access_token，再通过获取用户资料的接口获取到用户的资料。因为请求接口的时候需要传入应用的app secret,为了应用的安全，因此后面2步我们强烈不建议在客户端实现。 此插件和SocialSharing-PhoneGap-Plugin有什么不同？ SocialSharing-PhoneGap-Plugin调用的是系统级的分享接口，他支持的平台更多，但是功能有限。而我们的插件使用的是微信官方的sdk，所以在功能上和微信原生的sdk功能是一致的，功能会更加全面。 运行的时候提示”微信签名不一致” 确认微信的apk签名与开放平台填写的一致，可以通过签名生成工具获取签名。 另外ionic默认debug模式下运行的apk与正式打包出来签名的apk签名是不一致的。 微信支付的时候提示”普通错误” 1）确保apk的签名与微信开放平台填写一致 2）检查服务端生成签名的时候的参数是否与文档一致，尤其是大小写和顺序问题。 3）通过微信接口调试工具 验证签名是否正确 分享、支付的时候跳转回app的时候闪退 如果你的cordova-android版本是7.0以上,出现上述情况的时候，可以通过以下方法解决。 升级cordova-plugin-wechat到2.6.0版本以上； 删除插件和平台，重新添加和编译； 检查项目目录下 platforms/android/app/src/com/jasonz/demo ,其中com/jasonz/demo为你的报名路径下 是否存在wxapi文件夹,并且是否该文件夹下是否存在EntryActivity.java , WXEntryActivity.java , WXPayEntryActivity.java这三个文件。如果没有这个目录和3个文件，新建一个wxapi目录，把plugins/cordova-plugin-wechat/src/android 下的这3个文件拷贝到wrapi目录下，并且修改文件内容的第一行package __PACKAGE_NAME__ 为你的报名，例如：package com.jasonz.demo 即可。",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/docs/faq",
+    "relUrl": "/docs/faq"
   },
   "6": {
     "id": "6",
-    "title": "首页",
-    "content": "关于插件 cordova-plugin-wechat是基于微信官方sdk的cordova插件。 他基本包含了微信sdk的所有功能：微信登录，微信分享，微信支付和微信小程序功能。 立即开始 GitHub主页 联系我们 QQ交流群:190808518 加入我们 如果你有cordova插件开发经验并热爱开源，可以通过下面方式加入我们。 （请注明微信插件） qq:281674669 微信:foxmee",
-    "url": "https://jasonz1987.github.io/cordova-wechat/",
-    "relUrl": "/"
+    "title": "开始使用",
+    "content": "开始使用",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/docs/get-started",
+    "relUrl": "/docs/get-started"
   },
   "7": {
     "id": "7",
-    "title": "安装",
-    "content": "安装 你可以通过下面几种方式安装插件，其中YOUR_WECHAT_APPID为你申请应用的appid 在线安装 cordova plugin add cordova-plugin-wechat --variable wechatappid=YOUR_WECHAT_APPID 本地安装 下载压缩包解压到某个目录 cordova plugin add 本地目录/cordova-plugin-wechat --variable wechatappid=YOUR_WECHAT_APPID github安装 cordova plugin add https://github.com/xu-li/cordova-plugin-wechat#develop",
-    "url": "https://jasonz1987.github.io/cordova-wechat/docs/get-started/install.html",
-    "relUrl": "/docs/get-started/install.html"
+    "title": "首页",
+    "content": "关于插件 cordova-plugin-wechat是基于微信官方sdk的cordova插件。 他基本包含了微信sdk的所有功能：微信登录，微信分享，微信支付和微信小程序功能。 立即开始 GitHub主页 联系我们 QQ交流群:190808518 加入我们 如果你有cordova插件开发经验并热爱开源，可以通过下面方式加入我们。 （请注明微信插件） qq:281674669 微信:foxmee",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/",
+    "relUrl": "/"
   },
   "8": {
     "id": "8",
-    "title": "调用",
-    "content": "调用 如果你使用的ionic框架，也可以通过native方式使用。 详情参考wechat-native 定义 declare let Wechat:any; 调用 Wechat.somefunction(params,function(success){ console.log(&quot;调用成功&quot;); },function(err){ console.log(&quot;调用失败&quot;); });",
-    "url": "https://jasonz1987.github.io/cordova-wechat/docs/get-started/invoking.html",
-    "relUrl": "/docs/get-started/invoking.html"
+    "title": "安装",
+    "content": "安装 你可以通过下面几种方式安装插件，其中YOUR_WECHAT_APPID为你申请应用的appid 在线安装 cordova plugin add cordova-plugin-wechat --variable wechatappid=YOUR_WECHAT_APPID 本地安装 下载压缩包解压到某个目录 cordova plugin add 本地目录/cordova-plugin-wechat --variable wechatappid=YOUR_WECHAT_APPID github安装 cordova plugin add https://github.com/xu-li/cordova-plugin-wechat#develop",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/docs/get-started/install.html",
+    "relUrl": "/docs/get-started/install.html"
   },
   "9": {
     "id": "9",
-    "title": "打开微信小程序",
-    "content": "打开微信小程序 微信官方文档 openMiniProgram方法可以指定小程序的特定页面路径。使用前请确保移动应用已经关联了小程序。 如需小程序跳转回移动应用请参考《小程序开发文档》 参数说明 参数名 类型 是否必须 说明 userName string 是 小程序原始id path string 否 小程序页面路径，不填默认进入首页 miniprogramType string 是 小程序类型：RELEASE发布版 TEST测试版 PREVIEW体验版 示例代码 var params = { userName: &#39;gh_d43f693ca31f&#39;,   path: &#39;pages/index/index?name1=key1&amp;name2=key2&#39;, miniprogramType: Wechat.Mini.RELEASE }; Wechat.openMiniProgram(params,function(data){ console.log(data); },function(){ alert(&#39;error&#39;); })",
-    "url": "https://jasonz1987.github.io/cordova-wechat/docs/usages/open-mini.html",
-    "relUrl": "/docs/usages/open-mini.html"
+    "title": "调用",
+    "content": "调用 如果你使用的ionic框架，也可以通过native方式使用。 详情参考wechat-native 定义 declare let Wechat:any; 调用 Wechat.somefunction(params,function(success){ console.log(&quot;调用成功&quot;); },function(err){ console.log(&quot;调用失败&quot;); });",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/docs/get-started/invoking.html",
+    "relUrl": "/docs/get-started/invoking.html"
   },
   "10": {
     "id": "10",
-    "title": "支付",
-    "content": "发起支付 sendPaymentRequest方法用来唤起微信客户端进行支付请求。 微信官方文档 参数说明 发起支付的参数建议由服务端调用微信统一下单接口返回给app端。 示例代码 var params = { partnerid: &#39;10000100&#39;, // merchant id prepayid: &#39;wx201411101639507cbf6ffd8b0779950874&#39;, // prepay id noncestr: &#39;1add1a30ac87aa2db72f57a2375d8fec&#39;, // nonce timestamp: &#39;1439531364&#39;, // timestamp sign: &#39;0CB01533B8C1EF103065174F50BCA001&#39;, // signed string }; Wechat.sendPaymentRequest(ret.data, function () { alert(&quot;Success&quot;); }, function (reason) { alert(&quot;Failed: &quot; + reason); });",
-    "url": "https://jasonz1987.github.io/cordova-wechat/docs/usages/payment.html",
-    "relUrl": "/docs/usages/payment.html"
+    "title": "打开微信小程序",
+    "content": "打开微信小程序 微信官方文档 openMiniProgram方法可以指定小程序的特定页面路径。使用前请确保移动应用已经关联了小程序。 如需小程序跳转回移动应用请参考《小程序开发文档》 参数说明 参数名 类型 是否必须 说明 userName string 是 小程序原始id path string 否 小程序页面路径，不填默认进入首页 miniprogramType string 是 小程序类型：RELEASE发布版 TEST测试版 PREVIEW体验版 示例代码 var params = { userName: &#39;gh_d43f693ca31f&#39;,   path: &#39;pages/index/index?name1=key1&amp;name2=key2&#39;, miniprogramType: Wechat.Mini.RELEASE }; Wechat.openMiniProgram(params,function(data){ console.log(data); },function(){ alert(&#39;error&#39;); })",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/docs/usages/open-mini.html",
+    "relUrl": "/docs/usages/open-mini.html"
   },
   "11": {
     "id": "11",
-    "title": "分享",
-    "content": "微信分享 微信官方文档 微信分享及收藏目前支持文字、图片、音乐、视频、网页、小程序共六种类型（海外应用支持网页、小程序类型分享） 分享文字 参数说明 参数名称 参数类型 是否必须 说明 text string 是 分享的文本内容 scene int 否 分享的场景 TIMELINE朋友圈 SESSION会话 FAVORITE 收藏 默认朋友圈 示例代码 Wechat.share({ text: &quot;这是分享的文字内容&quot;, scene: Wechat.Scene.TIMELINE }, function () { alert(&quot;Success&quot;); }, function (reason) { alert(&quot;Failed: &quot; + reason); }); 分享链接 参数说明 参数名称 参数类型 是否必须 说明 title string 是 标题 description string 是 描述 thumb string 是 缩略图（支持本地资源，远程资源，base64） scene int 否 分享的场景 TIMELINE朋友圈 SESSION会话 FAVORITE 收藏 默认朋友圈 示例代码 Wechat.share({ message:{ title: &quot;这是分享的标题&quot;, description: &quot;这是分享的描述&quot;, thumb: &quot;www/assets/imgs/logo.png&quot;, media: { type: Wechat.Type.WEBPAGE, webpageUrl: &quot;https://www.jason-z.com&quot; } }, scene: Wechat.Scene.TIMELINE }, function () { alert(&quot;Success&quot;); }, function (reason) { alert(&quot;Failed: &quot; + reason); }); 分享图片 参数说明 参数名称 参数类型 是否必须 说明 title string 是 标题 description string 是 描述 thumb string 是 缩略图（支持本地资源，远程资源，base64） media object 是 见下表 scene int 否 分享的场景 TIMELINE朋友圈 SESSION会话 FAVORITE 收藏 默认朋友圈 参数名称 参数类型 是否必须 说明 type int 是 分享类型，固定值。 image string 是 分享图片（支持本地资源，远程资源，base64） 示例代码 Wechat.share({ message: { title: &quot;这是分享的标题&quot;, description: &quot;这是分享的描述&quot;, thumb: &quot;www/assets/imgs/logo.png&quot;, media: { type: Wechat.Type.IMAGE, image: &quot;https://www.jason-z.com/storage/test_image.jpg&quot; } }, scene: Wechat.Scene.TIMELINE }, function () { alert(&quot;Success&quot;); }, function (reason) { alert(&quot;Failed: &quot; + reason); }); 分享音乐 参数说明 参数名称 参数类型 是否必须 说明 title string 是 标题 description string 是 描述 thumb string 是 缩略图（支持本地资源，远程资源，base64） media object 是 见下表 scene int 否 分享的场景 TIMELINE朋友圈 SESSION会话 FAVORITE 收藏 默认朋友圈 参数名称 参数类型 是否必须 说明 type int 是 分享类型，固定值。 musicUrl string 是 音频网页的URL地址 musicDataUrl string 是 音频数据的URL地址 示例代码 Wechat.share({ message: { title: &quot;这是分享的标题&quot;, description: &quot;这是分享的描述&quot;, thumb: &quot;www/assets/imgs/logo.png&quot;, media: { type: Wechat.Type.MUSIC, musicUrl: &quot;https://www.jason-z.com&quot;, musicDataUrl: &quot;https://www.jason-z.com/storage/test_audio.mp3&quot; } }, scene: Wechat.Scene.TIMELINE }, function () { alert(&quot;Success&quot;); }, function (reason) { alert(&quot;Failed: &quot; + reason); }); 分享视频 参数说明 参数名称 参数类型 是否必须 说明 title string 是 标题 description string 是 描述 thumb string 是 缩略图（支持本地资源，远程资源，base64） media object 是 见下表 scene int 否 分享的场景 TIMELINE朋友圈 SESSION会话 FAVORITE 收藏 默认朋友圈 参数名称 参数类型 是否必须 说明 type int 是 分享类型，固定值。 videoUrl string 是 音频网页的URL地址 示例代码 Wechat.share({ message: { title: &quot;这是分享的标题&quot;, description: &quot;这是分享的描述&quot;, thumb: &quot;www/assets/imgs/logo.png&quot;, media: { type: Wechat.Type.VIDEO, videoUrl: &quot;https://www.jason-z.com/storage/test_video.mp4&quot;, } }, scene: Wechat.Scene.TIMELINE }, function () { alert(&quot;Success&quot;); }, function (reason) { alert(&quot;Failed: &quot; + reason); }); 分享小程序 参数说明 参数名称 参数类型 是否必须 说明 title string 是 标题 description string 是 描述 thumb string 是 缩略图（支持本地资源，远程资源，base64） media   是 见下表 scene int 否 分享的场景 仅支持SESSION 参数名称 参数类型 是否必须 说明 type int 是 分享类型，固定值。 webpageUrl string 是 兼容低版本的网页链接 userName string 是 小程序原始id path string 是 小程序页面路径 hdImageData string 是 分享缩略图（支持url和base64） withShareTicket boolean 是 是否使用带shareTicket的分享 miniprogramType int 是 小程序类型：RELEASE发布版 TEST测试版 PREVIEW体验版 示例代码 Wechat.share({ message: { title: &quot;这是分享的标题&quot;, description: &quot;这是分享的描述&quot;, thumb: &quot;www/assets/imgs/logo.png&quot;, media: { type: Wechat.Type.MINI, webpageUrl: &quot;https://www.jason-z.com&quot;, userName: &quot;gh_745127d80c0f&quot;, path: &quot;pages/logs/logs&quot;, // 小程序的页面路径 hdImageData: &quot;https://www.jason-z.com/storage/test_image.jpg&quot;, // 程序新版本的预览图二进制数据 不超过128kb 支持 地址 base64 temp withShareTicket: true, // 是否使用带shareTicket的分享 miniprogramType: Wechat.Mini.PREVIEW } }, scene: Wechat.Scene.SESSION }, function () { alert(&quot;Success&quot;); }, function (reason) { alert(&quot;Failed: &quot; + reason); });",
-    "url": "https://jasonz1987.github.io/cordova-wechat/docs/usages/share.html",
-    "relUrl": "/docs/usages/share.html"
+    "title": "支付",
+    "content": "发起支付 sendPaymentRequest方法用来唤起微信客户端进行支付请求。 微信官方文档 参数说明 发起支付的参数建议由服务端调用微信统一下单接口返回给app端。 示例代码 var params = { partnerid: &#39;10000100&#39;, // merchant id prepayid: &#39;wx201411101639507cbf6ffd8b0779950874&#39;, // prepay id noncestr: &#39;1add1a30ac87aa2db72f57a2375d8fec&#39;, // nonce timestamp: &#39;1439531364&#39;, // timestamp sign: &#39;0CB01533B8C1EF103065174F50BCA001&#39;, // signed string }; Wechat.sendPaymentRequest(ret.data, function () { alert(&quot;Success&quot;); }, function (reason) { alert(&quot;Failed: &quot; + reason); });",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/docs/usages/payment.html",
+    "relUrl": "/docs/usages/payment.html"
   },
   "12": {
     "id": "12",
-    "title": "鸣谢",
-    "content": "特别鸣谢以下童鞋为此插件作出了卓越贡献。 @xu-li @jason.z @duanwenjian",
-    "url": "https://jasonz1987.github.io/cordova-wechat/docs/thanks",
-    "relUrl": "/docs/thanks"
+    "title": "分享",
+    "content": "微信分享 微信官方文档 微信分享及收藏目前支持文字、图片、音乐、视频、网页、小程序共六种类型（海外应用支持网页、小程序类型分享） 分享文字 参数说明 参数名称 参数类型 是否必须 说明 text string 是 分享的文本内容 scene int 否 分享的场景 TIMELINE朋友圈 SESSION会话 FAVORITE 收藏 默认朋友圈 示例代码 Wechat.share({ text: &quot;这是分享的文字内容&quot;, scene: Wechat.Scene.TIMELINE }, function () { alert(&quot;Success&quot;); }, function (reason) { alert(&quot;Failed: &quot; + reason); }); 分享链接 参数说明 参数名称 参数类型 是否必须 说明 title string 是 标题 description string 是 描述 thumb string 是 缩略图（支持本地资源，远程资源，base64） scene int 否 分享的场景 TIMELINE朋友圈 SESSION会话 FAVORITE 收藏 默认朋友圈 示例代码 Wechat.share({ message:{ title: &quot;这是分享的标题&quot;, description: &quot;这是分享的描述&quot;, thumb: &quot;www/assets/imgs/logo.png&quot;, media: { type: Wechat.Type.WEBPAGE, webpageUrl: &quot;https://www.jason-z.com&quot; } }, scene: Wechat.Scene.TIMELINE }, function () { alert(&quot;Success&quot;); }, function (reason) { alert(&quot;Failed: &quot; + reason); }); 分享图片 参数说明 参数名称 参数类型 是否必须 说明 title string 是 标题 description string 是 描述 thumb string 是 缩略图（支持本地资源，远程资源，base64） media object 是 见下表 scene int 否 分享的场景 TIMELINE朋友圈 SESSION会话 FAVORITE 收藏 默认朋友圈 参数名称 参数类型 是否必须 说明 type int 是 分享类型，固定值。 image string 是 分享图片（支持本地资源，远程资源，base64） 示例代码 Wechat.share({ message: { title: &quot;这是分享的标题&quot;, description: &quot;这是分享的描述&quot;, thumb: &quot;www/assets/imgs/logo.png&quot;, media: { type: Wechat.Type.IMAGE, image: &quot;https://www.jason-z.com/storage/test_image.jpg&quot; } }, scene: Wechat.Scene.TIMELINE }, function () { alert(&quot;Success&quot;); }, function (reason) { alert(&quot;Failed: &quot; + reason); }); 分享音乐 参数说明 参数名称 参数类型 是否必须 说明 title string 是 标题 description string 是 描述 thumb string 是 缩略图（支持本地资源，远程资源，base64） media object 是 见下表 scene int 否 分享的场景 TIMELINE朋友圈 SESSION会话 FAVORITE 收藏 默认朋友圈 参数名称 参数类型 是否必须 说明 type int 是 分享类型，固定值。 musicUrl string 是 音频网页的URL地址 musicDataUrl string 是 音频数据的URL地址 示例代码 Wechat.share({ message: { title: &quot;这是分享的标题&quot;, description: &quot;这是分享的描述&quot;, thumb: &quot;www/assets/imgs/logo.png&quot;, media: { type: Wechat.Type.MUSIC, musicUrl: &quot;https://www.jason-z.com&quot;, musicDataUrl: &quot;https://www.jason-z.com/storage/test_audio.mp3&quot; } }, scene: Wechat.Scene.TIMELINE }, function () { alert(&quot;Success&quot;); }, function (reason) { alert(&quot;Failed: &quot; + reason); }); 分享视频 参数说明 参数名称 参数类型 是否必须 说明 title string 是 标题 description string 是 描述 thumb string 是 缩略图（支持本地资源，远程资源，base64） media object 是 见下表 scene int 否 分享的场景 TIMELINE朋友圈 SESSION会话 FAVORITE 收藏 默认朋友圈 参数名称 参数类型 是否必须 说明 type int 是 分享类型，固定值。 videoUrl string 是 音频网页的URL地址 示例代码 Wechat.share({ message: { title: &quot;这是分享的标题&quot;, description: &quot;这是分享的描述&quot;, thumb: &quot;www/assets/imgs/logo.png&quot;, media: { type: Wechat.Type.VIDEO, videoUrl: &quot;https://www.jason-z.com/storage/test_video.mp4&quot;, } }, scene: Wechat.Scene.TIMELINE }, function () { alert(&quot;Success&quot;); }, function (reason) { alert(&quot;Failed: &quot; + reason); }); 分享小程序 参数说明 参数名称 参数类型 是否必须 说明 title string 是 标题 description string 是 描述 thumb string 是 缩略图（支持本地资源，远程资源，base64） media   是 见下表 scene int 否 分享的场景 仅支持SESSION 参数名称 参数类型 是否必须 说明 type int 是 分享类型，固定值。 webpageUrl string 是 兼容低版本的网页链接 userName string 是 小程序原始id path string 是 小程序页面路径 hdImageData string 是 分享缩略图（支持url和base64） withShareTicket boolean 是 是否使用带shareTicket的分享 miniprogramType int 是 小程序类型：RELEASE发布版 TEST测试版 PREVIEW体验版 示例代码 Wechat.share({ message: { title: &quot;这是分享的标题&quot;, description: &quot;这是分享的描述&quot;, thumb: &quot;www/assets/imgs/logo.png&quot;, media: { type: Wechat.Type.MINI, webpageUrl: &quot;https://www.jason-z.com&quot;, userName: &quot;gh_745127d80c0f&quot;, path: &quot;pages/logs/logs&quot;, // 小程序的页面路径 hdImageData: &quot;https://www.jason-z.com/storage/test_image.jpg&quot;, // 程序新版本的预览图二进制数据 不超过128kb 支持 地址 base64 temp withShareTicket: true, // 是否使用带shareTicket的分享 miniprogramType: Wechat.Mini.PREVIEW } }, scene: Wechat.Scene.SESSION }, function () { alert(&quot;Success&quot;); }, function (reason) { alert(&quot;Failed: &quot; + reason); });",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/docs/usages/share.html",
+    "relUrl": "/docs/usages/share.html"
   },
   "13": {
     "id": "13",
-    "title": "教程",
-    "content": "教程 一般来说，按照文档上操作可以解决大部分问题。当然呢，如果你仍然无从下手，也可以参考我录制的课程。 《ionic3接入微信开发》 《微信开放平台的基本使用》",
-    "url": "https://jasonz1987.github.io/cordova-wechat/docs/totorial",
-    "relUrl": "/docs/totorial"
+    "title": "鸣谢",
+    "content": "特别鸣谢以下童鞋为此插件作出了卓越贡献。 @xu-li @jason.z @duanwenjian",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/docs/thanks",
+    "relUrl": "/docs/thanks"
   },
   "14": {
     "id": "14",
+    "title": "教程",
+    "content": "教程 一般来说，按照文档上操作可以解决大部分问题。当然呢，如果你仍然无从下手，也可以参考我录制的课程。 《ionic3接入微信开发》 《微信开放平台的基本使用》",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/docs/totorial",
+    "relUrl": "/docs/totorial"
+  },
+  "15": {
+    "id": "15",
     "title": "使用方法",
     "content": "使用方法",
-    "url": "https://jasonz1987.github.io/cordova-wechat/docs/usages",
+    "url": "https://jasonz1987.github.io/cordova-wechat-docs/docs/usages",
     "relUrl": "/docs/usages"
   }
   
