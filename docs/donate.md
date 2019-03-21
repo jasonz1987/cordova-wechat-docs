@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 捐赠
-nav_order: 5
+nav_order: 6
 permalink: docs/donate
 ---
 

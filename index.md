@@ -12,7 +12,7 @@ permalink: /
 
 他基本包含了微信sdk的所有功能：**微信登录**，**微信分享**，**微信支付**和**微信小程序**功能。
 
-[立即开始](/cordova-wechat/docs/get-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [GitHub主页](https://github.com/xu-li/cordova-plugin-wechat){: .btn .fs-5 .mb-4 .mb-md-0 }
+[立即开始](/cordova-wechat-docs/docs/get-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [GitHub主页](https://github.com/xu-li/cordova-plugin-wechat){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 
 # 联系我们
