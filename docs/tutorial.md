@@ -9,5 +9,5 @@ permalink: docs/totorial
 
 一般来说，按照文档上操作可以解决大部分问题。当然呢，如果你仍然无从下手，也可以参考我录制的课程。
 
-* [《ionic3微信开发》](https://www.jason-z.com/course/3)
-* [《微信公众平台的基本使用》](https://www.jason-z.com/course/4)
+* [《ionic3接入微信开发》](https://www.jason-z.com/course/3)
+* [《微信开放平台的基本使用》](https://www.jason-z.com/course/4)
