@@ -1,8 +1,31 @@
-</p>   
-    <h1 align="center">cordova wechat docs</h1>
-<p align="center"><a href="https://github.com/xu-li/cordova-plugin-wechat">cordova-plugin-wechat</a>的官方文档主页.<br>基于jekyll主题<a href="https://pmarsceill.github.io/just-the-docs/">just-the-docs</a>创建</p>
-    <p align="center"><strong><a href="https://jasonz1987.github.io/cordova-wechat/">查看内容!</a></strong></p>
 
-​    <br><br><br>
-</p>
+
+#关于
+
+此项目是[cordova-plugin-wechat](https://github.com/xu-li/cordova-plugin-wechat) 插件的的官方文档，基于[jekyll](https://jekyllrb.com/)主题[just-the-docs](https://pmarsceill.github.io/just-the-docs/)创建 。
+
+
+
+# 安装
+
+```shell
+gem install jekyll
+gem install just-the-docs
+```
+
+
+
+# 运行
+
+```shell
+jekyll serve
+```
+
+
+
+# 编译
+
+```shell
+jekyll build --destination dist
+```
 
